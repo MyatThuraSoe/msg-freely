@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Letter to MT</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+
+<body>
+    <div class="container">
+        <!-- <div class="blob">
+
+        </div> -->
+        <form method="post" action="https://message-mt.herokuapp.com/fbmsg">
+            <p>Secret message to  &nbsp;&nbsp;&nbsp;<br/><span>Myat Thura Soe</span></p>
+            <div class="name-container">
+                <label for="name">Name or something</label>
+                <input type="text" id="name" name="name" class="name" placeholder="Nickname or no name"/>
+            </div>
+            <div class="message-container">
+                <label for="message">Message</label>
+                <textarea type="text" id="message" name="message" class="message" placeholder="..." required></textarea>
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- <script src="https://unpkg.com/axios/dist/axios.min.js"></script> -->
+    <script type="text/javascript" src="app.js"></script>
+</body>
+
+</html>
